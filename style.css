@@ -1,0 +1,268 @@
+/*reset*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+a,
+li,
+button {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*end reset*/
+
+
+/******** header ********/
+
+header {
+    position: fixed;
+}
+
+.advt-wrapper {
+    background: url(img/green.png) no-repeat;
+    background-size: 100%;
+    height: 50px;
+}
+
+.advt a {
+    padding: 8px 0;
+    /* position: absolute;
+    top: 10%;
+    left: 30%; */
+    position: relative;
+    bottom: 120px;
+    /* top: -50px; */
+    left: 35%;
+    width: 150%;
+    z-index: 9;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    color: #fff;
+    font: 14px "Open Sans", sans-serif, Arial;
+    font-weight: bold;
+}
+
+.advt span {
+    color: #ffdb5b;
+}
+
+.advt img {
+    position: relative;
+    top: -60px;
+    left: -30%;
+    width: 150%;
+    z-index: 8;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    background: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.main-header ul li {
+    display: inline;
+    font: 14px "Open Sans", sans-serif, Arial;
+    /*font-weight: bold;*/
+    margin: 35px;
+}
+
+.main-header nav a {
+    color: #333333;
+    padding: 21px 0;
+}
+
+.main-header nav a:hover {
+    color: #ff622e;
+}
+
+.main-header .tel a {
+    padding: 21px 20px;
+    background: url(img/phone.svg) no-repeat;
+    font-weight: bold;
+}
+
+.main-header button {
+    border: 1px solid grey;
+    background-color: #fff;
+    margin: 0px 13px;
+    padding: 0px 13px;
+    font: 14px "Open Sans", sans-serif, Arial;
+    text-transform: uppercase;
+    border-radius: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+
+/******** main ********/
+
+#main {
+    padding-top: 50px;
+}
+
+#main .main-page-part {
+    background: url(img/bg.jpg) no-repeat;
+    background-size: 100%;
+    /*
+    display: block;
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    color: white;
+}
+
+#main h1 {
+    font: 48px "Open Sans", sans-serif, Arial;
+    padding: 48px 0px 37px;
+    font-weight: bold;
+}
+
+#main h2 {
+    font: 18px "Open Sans", sans-serif, Arial;
+    font-weight: bold;
+    margin: 0px 375px;
+}
+
+#main .main-page-part .buttons-header {
+    padding: 46px 0px 32px;
+    font: 13px "Open Sans", sans-serif, Arial;
+    color: #333333;
+}
+
+#main .main-page-part .buttons-header button {
+    font: 13px "Open Sans", sans-serif, Arial;
+    color: #333333;
+    margin: 0px 5px;
+    padding: 17px 30px;
+    background: #ff622e;
+    border-style: none;
+}
+
+#main .buttons-header #left-main-btn {
+    background: #ff622e;
+    color: #fff;
+}
+
+#main .buttons-header #right-main-btn {
+    background: #fff;
+    color: #ff622e;
+}
+
+#main .main-page-part p {
+    font: 15px "Open Sans", sans-serif, Arial;
+    color: #fff;
+    padding: 20px 0px;
+    display: block;
+}
+
+#main .main-page-part .carusel {
+    margin: 105px 0px;
+}
+
+#main .carusel button {
+    background: #a6a6a6;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+}
+
+#main .carusel img {
+    max-width: 40%;
+}
+
+#main .carusel .img-carusel {
+    margin: auto;
+    width: 640px;
+    position: relative;
+    z-index: 1;
+}
+
+#main .carusel .img-carusel img {
+    z-index: 1;
+}
+
+#main .carusel .img-carusel .img-2 {
+    left: -120px;
+    top: 25px;
+}
+
+#main .carusel .img-carusel .img-3 {
+    left: -240px;
+    top: 50px;
+}
+
+#main .main-page-part .carusel {
+    background: url(img/arrows.png) no-repeat;
+}
+
+#btn-carusel-left {}
+
+
+/********** test **********/
+
+#test .img-carusel {
+    /* margin: auto;
+    width: 640px;
+    line-height: 1px; */
+    position: absolute;
+    display: block;
+}
+
+#test .img-carusel img {
+    width: 30%;
+}
+
+#test .img-carusel .img-1 {
+    top: 50px;
+    right: 55px;
+    z-index: 5;
+}
+
+#test .img-carusel .img-2 {
+    border: 2px solid red;
+    right: -120px;
+    top: 25px;
+    z-index: 2;
+}
+
+#test .img-carusel .img-3 {
+    border: 2px solid red;
+    left: -295px;
+    z-index: 1;
+}
+
+
+/*************************/
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+}
