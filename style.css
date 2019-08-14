@@ -315,6 +315,7 @@ header {
     color: #666666;
     text-align: center;
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 #for-all .part .part-inside a {
@@ -335,6 +336,176 @@ header {
     -moz-border-radius: 30%;
     -ms-border-radius: 30%;
     -o-border-radius: 30%;
+}
+
+
+/************ download *************/
+
+#download {
+    padding: 20px 0 120px;
+    background-image: linear-gradient(to right, #46a8cf 0%, #4980a9 100%);
+    color: #fff;
+    font: 24px "Open Sans", sans-serif, Arial;
+}
+
+#download b {
+    background: #56aacf;
+    color: #fff;
+    margin: 0 0 0 5px;
+    padding: 1px 10px;
+}
+
+#download p {
+    text-align: center;
+    padding: 50px 0 0;
+    /* padding: 1px 5px 1px 0px; */
+}
+
+#download button {
+    border: none;
+    padding: 22px 15px;
+    background: #fff;
+    margin-right: 13px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#download button:nth-child(1)::before {
+    content: "";
+    background: url(img/download.svg) no-repeat;
+    background-position: 10px;
+    padding: 10px 0px 10px 40px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+#download button:nth-child(2)::before {
+    content: "";
+    background: url(img/download.svg) no-repeat;
+    background-position: -28px;
+    padding: 10px 12px 10px 22px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+#download button:nth-child(3)::before {
+    content: "";
+    background: url(img/download.svg) no-repeat;
+    background-position: -58px;
+    padding: 10px 0px 10px 40px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+#download button:nth-child(4)::before {
+    content: "";
+    background: url(img/download.svg) no-repeat;
+    background-position: -90px;
+    padding: 10px 90px 10px 40px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+#download button:nth-child(5)::before {
+    content: "";
+    background: url(img/download.svg) no-repeat;
+    background-position: -215px;
+    padding: 10px 100px 10px 40px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+#download button:nth-child(1):hover {
+    color: #786b59;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+
+/*********** users **************/
+
+#users {
+    background: #f6f6f6;
+    padding: 69px 0 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#users h3 {
+    text-align: center;
+    font: 24px "Open Sans", sans-serif, Arial;
+    color: #333333;
+}
+
+#users .content {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+    max-width: 960px;
+}
+
+#users .company {
+    display: flex;
+    flex-direction: row;
+}
+
+#users .company div {
+    width: 170px;
+    height: 160px;
+}
+
+#users .company .customer-1 {
+    content: "";
+    background: url(img/customers-articles.png) no-repeat;
+    background-size: 2000%;
+    background-position: -1790px;
+}
+
+#users .company .customer-2 {
+    content: "";
+    background: url(img/customers-articles.png) no-repeat;
+    background-size: 3000%;
+    background-position: -48px;
+}
+
+#users .company .customer-3 {
+    content: "";
+    background: url(img/customers-articles.png) no-repeat;
+    background-size: 2700%;
+    background-position: -250px;
+}
+
+#users .company .customer-4 {
+    content: "";
+    background: url(img/customers-articles.png) no-repeat;
+    background-size: 2200%;
+    background-position: -1820px;
+}
+
+#users .company .customer-5 {
+    content: "";
+    background: url(img/customers-articles.png) no-repeat;
+    background-size: 2500%;
+    background-position: -430px;
+}
+
+#users .company .customer-6 {
+    content: "";
+    background: url(img/customers-articles.png) no-repeat;
+    background-size: 2500%;
+    background-position: -600px;
+}
+
+#users .content .arno {
+    /* display: flex;
+    flex-direction: column;
+    max-width: 303px; */
+    border: 2px solid black;
+    max-width: 303px;
 }
 
 
