@@ -466,13 +466,6 @@ header {
     -webkit-filter: grayscale(100%);
 }
 
-
-/* #download button:nth-child(1):hover {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    border: #e62d2d;
-} */
-
 #download button:hover {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
@@ -500,10 +493,8 @@ header {
 #users .content {
     display: flex;
     flex-direction: row;
-    /* border: 2px solid red; */
     max-width: 960px;
     padding-bottom: 37px;
-    /* padding: 34px 0; */
 }
 
 #users .company {
@@ -514,7 +505,6 @@ header {
 #users .company div {
     width: 170px;
     height: 160px;
-    /* margin: 10px; */
 }
 
 #users .company .customer-1 {
@@ -604,7 +594,6 @@ header {
 }
 
 #users .content .arno {
-    /* border: 2px solid black; */
     max-width: 303px;
     font: 14px "Open Sans", sans-serif, Arial;
     text-align: center;
@@ -628,9 +617,7 @@ header {
 }
 
 #users .content .arno a {
-    /* padding: 30px 0 0; */
     font: 13px "Open Sans", sans-serif, Arial;
-    /* margin-top: 30px; */
     color: #ff642e;
     text-decoration: underline;
 }
@@ -735,6 +722,69 @@ header {
     padding: 30px 0 0 0;
 }
 
+#reviews .magazins div {
+    width: 170px;
+    height: 150px;
+    background: url(img/customers-articles.png) no-repeat;
+    background-size: 3000%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition-duration: 0.3s;
+}
+
+#reviews .magazins div:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transition-duration: 0.3s;
+}
+
+
+/* zdnet */
+
+#reviews .magazins .mag-1 {
+    background-position: -1210px;
+    background-size: 2500%;
+    width: 190px;
+}
+
+
+/* techrepublic */
+
+#reviews .magazins .mag-2 {
+    background-position: -1380px;
+    background-size: 2500%;
+    width: 190px;
+}
+
+
+/* pc */
+
+#reviews .magazins .mag-3 {
+    background-position: -1680px;
+}
+
+
+/* softpedia */
+
+#reviews .magazins div.mag-4 {
+    background-position: -1850px;
+}
+
+
+/* cms wire */
+
+#reviews .magazins div.mag-5 {
+    background-position: -2075px;
+}
+
+
+/* ct */
+
+#reviews .magazins .mag-6 {
+    background-position: -2560px;
+    width: 190px;
+}
+
 #reviews .rating {
     padding: 30px 0 10px;
 }
@@ -751,46 +801,26 @@ header {
     text-decoration: none;
 }
 
-#reviews .magazins .mag-1 span {
-    content: "";
-    background: url(img/customers-articles.png) no-repeat;
-    width: 170px;
-    height: 150px;
-    /* display: inline-block; */
+
+/************ test *************/
+
+#test div {
     float: left;
-    z-index: -10;
-    /* background-size: 3000%; */
-    /* background-position: -1680px; */
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+    /* width: 300px; */
+    /* height: 300px; */
+    margin: 300px 0;
+    /* padding: 0 0 0 -100px; */
+    overflow: hidden;
+    /* this is important */
+    border: 1px solid #ccc;
+    /* margin: 0 -200px 0 -250px; */
 }
 
-#reviews .magazins .mag-3 {
-    content: "";
-    background: url(img/customers-articles.png) no-repeat;
-    width: 170px;
-    height: 150px;
-    background-size: 3000%;
-    background-position: -1680px;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-}
-
-#reviews .magazins .mag-4 {
-    content: "";
-    background: url(img/customers-articles.png) no-repeat;
-    width: 170px;
-    height: 150px;
-    background-size: 3000%;
-    background-position: -1850px;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-}
-
-#reviews .magazins div:hover {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    transition-duration: 0.3s;
+#test img {
+    /* margin: -41px -156px -40px -30px; */
+    /* width: 100px; */
+    /* width: 1300px; */
+    margin: 0 -100px 0 -100px;
 }
 
 
@@ -940,21 +970,4 @@ header {
 
 #footer .network .inst:hover {
     background-position: -278px -24px;
-}
-
-
-/*************************/
-
-.box {
-    width: 50px;
-    height: 50px;
-    border: 2px solid red;
-}
-
-#test {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    border: 2px solid black;
 }
