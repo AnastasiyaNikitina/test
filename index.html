@@ -4,15 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" initial-scale=1>
+
     <title>ONLYOFFICE - офисные приложения для бизнеса онлайн | ONLYOFFICE </title>
+    <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- <link rel="stylesheet" href="swiper.min.css"> -->
-    <link rel="stylesheet" href="js/swiper-master/dist/css/swiper.min.css">
-    <link rel="stylesheet" href="/css/gslider.css">
+
+    <link rel="stylesheet" href="js/slick-master/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-master/slick/slick-theme.css">
+
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="advt-wrapper">
             <div class="advt">
                 <img src="img/bg-back-to-school.svg">
@@ -45,36 +48,14 @@
                 <button id="right-main-btn">Попробовать в облаке</button>
             </div>
             <p>100% совместимость с форматами MS Office</p>
-            <div class="carusel">
-                <div id="btn-carusel-left"></div>
-                <div class="img-carusel">
-                    <img class="img-1" src="img/document.jpg" alt="">
-                    <img class="img-2" src="img/spreadsheet.jpg" alt="">
-                    <img class="img-3" src="img/presentation.jpg" alt="">
-                </div>
-                <div id="btn-carusel-right"></div>
-                <button id="btn-carusel-1"></button>
-                <button id="btn-carusel-2"></button>
-                <button id="btn-carusel-3"></button>
+
+            <div class="slider demo">
+                <div> <img class="img-1" src="img/document.jpg" alt=""> </div>
+                <div> <img class="img-2" src="img/spreadsheet.jpg" alt=""> </div>
+                <div> <img class="img-3" src="img/presentation.jpg" alt=""> </div>
             </div>
         </div>
-        <!-- <div>
-            <div class="slider-arrow-left"><span>Влево</span></div>
-            <div class="jcarousel">
-                <ul class="slider-list">
-                    <li class="items"><img src="img/document.jpg">
-                        <p>Описание 1</p>
-                    </li>
-                    <li class="items"><img src="img/spreadsheet.jpg">
-                        <p>Описание 2</p>
-                    </li>
-                    <li class="items"><img src="img/presentation.jpg">
-                        <p>Описание 3</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="slider-arrow-right"><span>Вправо</span></div>
-        </div> -->
+
     </section>
 
     <section id="for-all">
@@ -157,16 +138,38 @@
 
     </section>
 
-    <section id="carusel-2">
+    <section id="slider">
 
-
-        <button class="btn-left"></button>
-        <div class="content-carusel-2">
-
+        <!-- <button class="btn-left"></button> -->
+        <div class="content-slider">
+            <div class="slider slider-twitter">
+                <div>
+                    <img src="img/icon.jpg" alt="">
+                    <span>The ONLYOFFICE</span>
+                    <span>Wednesday, August 14, 2019</span>
+                    <p>We already miss to <a>#linuxjournal</a> It is the end of an era.</p>
+                </div>
+                <div>
+                    <img src="img/icon.jpg" alt="">
+                    <span>The ONLYOFFICE</span>
+                    <span>Wednesday, August 14, 2019</span>
+                    <p>Do you use <a>#Linux</a> at home</p>
+                </div>
+                <div>
+                    <img src="img/icon.jpg" alt="">
+                    <span>The ONLYOFFICE</span>
+                    <span>Tusday, August 13, 2019</span>
+                    <p>Learn how to customize <a>#ONLYOFFICE</a> editor interdace within <a>#Nextcloud</a> and <a>#ownCloud</a></p>
+                </div>
+                <div>
+                    <img src="img/icon.jpg" alt="">
+                    <span>The ONLYOFFICE</span>
+                    <span>Monday, August 12, 2019</span>
+                    <p>Rate this monday</p>
+                </div>
+            </div>
         </div>
-        <button class="btn-right"></button>
-
-
+        <!-- <button class="btn-right"></button> -->
 
     </section>
 
@@ -182,23 +185,18 @@
             <div class="mag-6"></div>
         </div>
         <div class="rating">
-            <div><span>"ОДНА ИЗ ЛУЧШИХ СИСТЕМ УПРАВЛЕНИЯ ДОКУМЕНТАМИ"
-                    ПО ВЕРСИИ PCMAG.</span></div>
-            <div><span>4,5 БАЛЛА ПО ОЦЕНКЕ
-                    ПОЛЬЗОВАТЕЛЕЙ CAPTERRA</span></div>
-            <div><span>ЛИДЕР ПО МНЕНИЮ
-                    SOFTWARE ADVICE</span></div>
+            <div class="awwards-1">
+                <span>"ОДНА ИЗ ЛУЧШИХ СИСТЕМ УПРАВЛЕНИЯ ДОКУМЕНТАМИ" ПО ВЕРСИИ PCMAG.</span>
+            </div>
+            <div class="awwards-2">
+                <span>4,5 БАЛЛА ПО ОЦЕНКЕ ПОЛЬЗОВАТЕЛЕЙ CAPTERRA</span>
+            </div>
+            <div class="awwards-3">
+                <span>ЛИДЕР ПО МНЕНИЮ SOFTWARE ADVICE</span>
+            </div>
         </div>
-        <a>Смотреть все награды</a>
+        <p><a>Смотреть все награды</a></p>
     </section>
-
-
-    <!-- <section id="test_2">
-        <div>
-            <img src="img/customers-articles.png">
-        </div>
-    </section> -->
-
 
     <footer id="footer">
         <div class="footer-content">
@@ -258,6 +256,7 @@
             </div>
             <div class="network">
                 <span>Следите за нашими новостями:</span>
+                <!-- <div class="social-network"> -->
                 <div class="fb" title="Facebook">
                     <a href=""></a>
                 </div>
@@ -282,21 +281,16 @@
                 <div class="inst" title="Instagram">
                     <a href=""></a>
                 </div>
+                <!-- </div> -->
                 <p>© Ascensio System SIA 2019. Все права защищены</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
-    </script>
-    <script src="js/gslider.js"></script>
-
-    <script src="js/script.js"></script>
-    <script src="js/jquery-3.4.1.min"></script>
-    <script src="js/swiper-master/dist/js/swiper.min.js"></script>
-    <!-- <script src="swiper.min.js"></script> -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick-master/slick/slick.js"></script>
+    <script src="js/script_2.js"></script>
 
 </body>
 
