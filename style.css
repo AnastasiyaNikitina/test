@@ -7,7 +7,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
     padding: 0px;
     margin: 0px;
 }
@@ -146,11 +147,13 @@ img {
 #header .main-header nav table p {
     background: #ffffff;
     color: #666666;
+    padding: 0;
 }
 
-#header .main-header nav table td {
-    padding: 10px;
-    border-left: 2px solid #a9a9a9;
+#header .main-header nav table td,
+th {
+    padding: 5px 20px;
+    border-left: 1px solid #a9a9a9;
 }
 
 #header .main-header nav table span {
@@ -166,6 +169,10 @@ img {
     background: #f4f4f4;
 }
 
+#header .main-header nav table tr:nth-child(2) td:hover {
+    background: yellow;
+}
+
 
 /* #header .main-header nav table p:hover {
     background: #ffffff;
@@ -176,6 +183,7 @@ img {
     color: #a6a6a6;
     font: 12px "Open Sans", sans-serif, Arial;
     line-height: 1.5;
+    padding: 0;
 }
 
 
@@ -188,7 +196,7 @@ img {
 /******************/
 
 #header .main-header .tel a {
-    padding: 21px 20px;
+    /* padding: 21px 20px; */
     background: url(img/phone.svg) no-repeat;
     font-weight: bold;
 }
